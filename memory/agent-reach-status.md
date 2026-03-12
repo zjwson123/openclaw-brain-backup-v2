@@ -2,10 +2,11 @@
 
 *安装时间：2026-03-12*
 *环境：macOS ARM64 (Apple Silicon)*
+*最后更新：2026-03-13*
 
 ---
 
-## ✅ 已安装完成（8/15 渠道）
+## ✅ 已安装完成（10/15 渠道）
 
 ### 立即可用
 
@@ -19,17 +20,17 @@
 | **任意网页** | ✅ | Jina Reader 读取 |
 | **B站** | ✅ | 视频、字幕提取 |
 | **微博** | ✅ | 热搜、搜索、用户动态、评论 |
+| **抖音** | ✅ | 视频解析、无水印下载（服务运行在 :18070）|
+| **微信公众号** | ✅ | 文章阅读、搜索工具已安装 |
 
 ### 待配置（需要额外设置）
 
 | 渠道 | 状态 | 所需配置 |
 |------|------|----------|
 | **小红书** | ⏳ | Docker MCP 服务（ARM64需源码构建）|
-| **抖音** | ⏳ | `pip install douyin-mcp-server` |
 | **小宇宙播客** | ⏳ | Groq API Key（免费）|
 | **Reddit** | ⏳ | 代理配置（服务器 IP 可能被封锁）|
-| **LinkedIn** | ⏳ | `pip install linkedin-scraper-mcp` |
-| **微信公众号** | ⏳ | `pip install camoufox[geoip] miku_ai` |
+| **LinkedIn** | ⏳ | 需要浏览器登录（见下方说明）|
 | **V2EX** | ⚠️ | 连接超时，可能需要代理 |
 
 ---
@@ -72,6 +73,16 @@ yt-dlp --dump-json "https://www.bilibili.com/video/xxxxx"
 mcporter call 'weibo.get_trendings(limit: 10)'
 ```
 
+**抖音视频：**
+```bash
+mcporter call 'douyin.parse_douyin_video_info(url: "https://v.douyin.com/xxxxx")'
+```
+
+**微信公众号搜索：**
+```bash
+python3 -m miku_ai.search "关键词"
+```
+
 **任意网页：**
 ```bash
 curl -s "https://r.jina.ai/https://example.com"
@@ -84,7 +95,7 @@ mcporter call 'exa.web_search_exa(query: "AI Agent", num_results: 5)'
 
 ---
 
-## 📋 待办配置
+## 📋 待配置说明
 
 ### 1. 小红书（ARM64 需源码构建）
 ```bash
@@ -94,25 +105,40 @@ cd ~/.agent-reach/tools/xiaohongshu-mcp
 docker build -t xiaohongshu-mcp .
 docker run -d --name xiaohongshu-mcp -p 18060:18060 xiaohongshu-mcp
 mcporter config add xiaohongshu http://localhost:18060/mcp
+
+# 登录方式（使用 Cookie-Editor）：
+# 1. 浏览器登录小红书 (xiaohongshu.com)
+# 2. Cookie-Editor 插件 → Export → Header String
+# 3. agent-reach configure xhs-cookies "key1=val1; key2=val2"
 ```
 
-### 2. 抖音
+### 2. 小宇宙播客转文字
 ```bash
-pip install douyin-mcp-server
-# 启动服务后注册到 mcporter
-```
-
-### 3. 小宇宙播客转文字
-```bash
-# 1. 获取免费 Groq API Key: https://console.groq.com
+# 1. 获取免费 Groq API Key: https://console.groq.com（30秒注册，无需信用卡）
 # 2. 配置
 agent-reach configure groq-key gsk_xxxxx
+
+# 使用方式
+bash ~/.agent-reach/tools/xiaoyuzhou/transcribe.sh https://www.xiaoyuzhoufm.com/episode/xxxxx
 ```
 
-### 4. 微信公众号
+### 3. LinkedIn（需要浏览器登录）
 ```bash
-pip install camoufox[geoip] markdownify beautifulsoup4 httpx mcp
-pip install miku_ai
+# 方式1：本地有桌面环境
+linkedin-scraper-mcp --login --no-headless
+# 浏览器会弹出，手动登录 LinkedIn
+
+# 方式2：使用 VNC（服务器环境）
+# 登录后启动服务
+linkedin-scraper-mcp --transport streamable-http --port 8001
+mcporter config add linkedin http://localhost:8001/mcp
+```
+
+### 4. Reddit
+```bash
+# 需要住宅代理（服务器 IP 被封锁）
+# 获取代理：https://webshare.io ($1/month)
+agent-reach configure proxy http://user:pass@ip:port
 ```
 
 ---
@@ -122,12 +148,12 @@ pip install miku_ai
 **Twitter/X Cookie（如需发帖或完整搜索）：**
 ```bash
 # 1. 浏览器登录 Twitter
-# 2. 使用 Cookie-Editor 插件导出 Header String
+# 2. Cookie-Editor 插件 → Export → Header String
 # 3. 配置
 agent-reach configure twitter-cookies "key1=val1; key2=val2"
 ```
 
-**代理配置（如需解锁 Reddit）：**
+**代理配置：**
 ```bash
 agent-reach configure proxy http://user:pass@ip:port
 ```
@@ -140,7 +166,15 @@ agent-reach configure proxy http://user:pass@ip:port
 - 配置文件：`~/.agent-reach/config.json`
 - 工具目录：`~/.agent-reach/tools/`
 - 已集成到 Claude Code Skill: `~/.claude/skills/agent-reach`
+- 抖音服务运行在 `localhost:18070`
 
 ---
 
-*最后更新：2026-03-12*
+## 🆕 更新记录
+
+- **2026-03-13**: 完成抖音、微信公众号工具安装配置
+- **2026-03-12**: 基础安装完成，8个渠道可用
+
+---
+
+*最后更新：2026-03-13*
