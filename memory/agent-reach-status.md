@@ -6,7 +6,7 @@
 
 ---
 
-## ✅ 已安装完成（10/15 渠道）
+## ✅ 已安装完成（11/15 渠道）
 
 ### 立即可用
 
@@ -21,6 +21,7 @@
 | **B站** | ✅ | 视频、字幕提取 |
 | **微博** | ✅ | 热搜、搜索、用户动态、评论 |
 | **抖音** | ✅ | 视频解析、无水印下载（服务运行在 :18070）|
+| **小宇宙播客** | ✅ | 播客下载 + Whisper 转文字 |
 | **微信公众号** | ✅ | 文章阅读、搜索工具已安装 |
 
 ### 待配置（需要额外设置）
@@ -28,7 +29,7 @@
 | 渠道 | 状态 | 所需配置 |
 |------|------|----------|
 | **小红书** | ⏳ | Docker MCP 服务（ARM64需源码构建）|
-| **小宇宙播客** | ⏳ | Groq API Key（免费）|
+| **小宇宙播客** | ✅ | 已配置 Groq API Key |
 | **Reddit** | ⏳ | 代理配置（服务器 IP 可能被封锁）|
 | **LinkedIn** | ⏳ | 需要浏览器登录（见下方说明）|
 | **V2EX** | ⚠️ | 连接超时，可能需要代理 |
@@ -73,6 +74,11 @@ yt-dlp --dump-json "https://www.bilibili.com/video/xxxxx"
 mcporter call 'weibo.get_trendings(limit: 10)'
 ```
 
+**小宇宙播客转文字：**
+```bash
+bash ~/.agent-reach/tools/xiaoyuzhou/transcribe.sh https://www.xiaoyuzhoufm.com/episode/xxxxx
+```
+
 **抖音视频：**
 ```bash
 mcporter call 'douyin.parse_douyin_video_info(url: "https://v.douyin.com/xxxxx")'
@@ -112,17 +118,7 @@ mcporter config add xiaohongshu http://localhost:18060/mcp
 # 3. agent-reach configure xhs-cookies "key1=val1; key2=val2"
 ```
 
-### 2. 小宇宙播客转文字
-```bash
-# 1. 获取免费 Groq API Key: https://console.groq.com（30秒注册，无需信用卡）
-# 2. 配置
-agent-reach configure groq-key gsk_xxxxx
-
-# 使用方式
-bash ~/.agent-reach/tools/xiaoyuzhou/transcribe.sh https://www.xiaoyuzhoufm.com/episode/xxxxx
-```
-
-### 3. LinkedIn（需要浏览器登录）
+### 1. 小红书（ARM64 需源码构建）
 ```bash
 # 方式1：本地有桌面环境
 linkedin-scraper-mcp --login --no-headless
