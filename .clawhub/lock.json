@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "code-review": {
+      "version": "1.0.0",
+      "installedAt": 1772557749752
+    },
+    "test-master": {
+      "version": "0.1.0",
+      "installedAt": 1772557981502
+    }
+  }
+}
