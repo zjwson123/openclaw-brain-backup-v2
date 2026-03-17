@@ -240,3 +240,13 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 **Crypto Web3 领域示例**：在 Agent 尝试生成加密货币转账、跨链兑换或智能合约调用前，必须自动调用安全情报技能（如 AML 反洗钱追踪、代币安全扫描器），校验目标地址风险评分、扫描合约安全性。Risk Score >= 90 时硬中断。
 
 **签名隔离原则**：Agent 仅负责构造未签名的交易数据（Calldata），绝不允许要求用户提供私钥，实际签名必须由人类通过独立钱包完成。
+
+## Knowledge Protocol (ByteRover)
+This agent uses ByteRover (`brv`) as its long-term structured memory.
+You MUST use this for gathering contexts before any work. This is a Knowledge management for AI agents. Use `brv` to store and retrieve project patterns, decisions, and architectural rules in .brv/context-tree.
+1.  **Start:** Before answering questions, run `brv query "<topic>"` to load existing patterns.
+2.  **Finish:** After completing a task, run `brv curate "<summary>"` to save knowledge.
+3.  **Don't Guess:** If you don't know anything, query it first.
+4.  **Response Format:** When using knowledge, optionally cite it or mention storage:
+    - "Based on brv contexts at `.brv/context-trees/...` and my research..."
+    - "I also stored successfully knowledge to brv context-tree."
