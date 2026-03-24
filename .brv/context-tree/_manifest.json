@@ -1,0 +1,97 @@
+{
+  "active_context": [
+    {
+      "importance": 50,
+      "path": "architecture/context.md",
+      "tokens": 86,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "architecture/error_handling/admit_fix_learn_pattern.md",
+      "tokens": 257,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "architecture/error_handling/context.md",
+      "tokens": 56,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "architecture/memory_system/context.md",
+      "tokens": 45,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "architecture/memory_system/memory_architecture.md",
+      "tokens": 366,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "patterns/context.md",
+      "tokens": 80,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "patterns/query_handling/context.md",
+      "tokens": 48,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "patterns/query_handling/time_sensitive_queries.md",
+      "tokens": 248,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "project_management/agent_reach/context.md",
+      "tokens": 57,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "project_management/agent_reach/data_collection_architecture.md",
+      "tokens": 336,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "project_management/context.md",
+      "tokens": 87,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "system_administration/context.md",
+      "tokens": 78,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "system_administration/macos/context.md",
+      "tokens": 47,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "system_administration/macos/gnu_grep_compatibility.md",
+      "tokens": 288,
+      "type": "context"
+    }
+  ],
+  "generated_at": "2026-03-22T16:05:50.418Z",
+  "lane_tokens": {
+    "contexts": 2079,
+    "stubs": 0,
+    "summaries": 0
+  },
+  "source_fingerprint": "4b5b54923d82b4b9bb91876e246adeb8953a1db73d059869424ca5c423c81b1f",
+  "total_tokens": 2079,
+  "version": 1
+}
