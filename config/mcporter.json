@@ -16,6 +16,9 @@
     },
     "douyin": {
       "baseUrl": "http://localhost:18070/mcp"
+    },
+    "tinyfish": {
+      "url": "https://agent.tinyfish.ai/mcp"
     }
   },
   "imports": []
