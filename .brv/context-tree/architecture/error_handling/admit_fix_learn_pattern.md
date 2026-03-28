@@ -2,36 +2,37 @@
 title: Admit Fix Learn Pattern
 tags: []
 keywords: []
-importance: 50
+importance: 55
 recency: 1
 maturity: draft
+updateCount: 1
 createdAt: '2026-03-22T01:06:57.806Z'
-updatedAt: '2026-03-22T01:06:57.806Z'
+updatedAt: '2026-03-28T01:05:13.755Z'
 ---
 ## Raw Concept
 **Task:**
-Document error handling process
+Define error handling process
 
-**Files:**
-- memory/patterns.md
+**Changes:**
+- Standardized error handling steps
 
 **Flow:**
-Acknowledge (Admit) → Apply fix (Fix) → Root cause analysis & update patterns (Learn)
+Acknowledge -> Fix -> Analyze -> Update
 
-**Timestamp:** 2026-03-22
+**Timestamp:** 2026-03-28
 
 ## Narrative
 ### Structure
-The process consists of four stages: 1) Immediate acknowledgement without excuses, 2) Applying the fix, 3) Conducting root cause analysis and identifying similar risks, 4) Updating existing patterns to prevent recurrence.
+A four-step process for handling errors systematically.
 
 ### Highlights
-Emphasizes accountability and preventive measures through pattern updates.
+Ensures accountability and continuous improvement by updating work patterns.
 
 ### Rules
-Rule 1: Acknowledge immediately without excuse
-Rule 2: Apply fix
-Rule 3: Perform root cause analysis and identify similar risks
-Rule 4: Update patterns to prevent recurrence
+1. Acknowledge immediately without hiding
+2. Take corrective action
+3. Analyze root cause to identify similar risks
+4. Update work patterns to prevent recurrence
 
 ## Facts
-- **error_handling_pattern**: Error handling follows the Admit → Fix → Learn pattern [convention]
+- **error_documentation**: Error cases should be stored in patterns.md or feedback.md [convention]

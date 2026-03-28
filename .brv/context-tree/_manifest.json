@@ -1,15 +1,63 @@
 {
   "active_context": [
     {
-      "importance": 50,
-      "path": "architecture/context.md",
-      "tokens": 86,
+      "order": 3,
+      "path": "_index.md",
+      "tokens": 497,
+      "type": "summary"
+    },
+    {
+      "order": 2,
+      "path": "architecture/_index.md",
+      "tokens": 313,
+      "type": "summary"
+    },
+    {
+      "order": 2,
+      "path": "facts/_index.md",
+      "tokens": 96,
+      "type": "summary"
+    },
+    {
+      "order": 2,
+      "path": "memory/_index.md",
+      "tokens": 184,
+      "type": "summary"
+    },
+    {
+      "order": 2,
+      "path": "patterns/_index.md",
+      "tokens": 416,
+      "type": "summary"
+    },
+    {
+      "order": 1,
+      "path": "architecture/error_handling/_index.md",
+      "tokens": 238,
+      "type": "summary"
+    },
+    {
+      "order": 1,
+      "path": "facts/project/_index.md",
+      "tokens": 131,
+      "type": "summary"
+    },
+    {
+      "order": 0,
+      "path": "patterns/query_handling/time_sensitive_queries/_index.md",
+      "tokens": 109,
+      "type": "summary"
+    },
+    {
+      "importance": 55,
+      "path": "architecture/error_handling/admit_fix_learn_pattern.md",
+      "tokens": 209,
       "type": "context"
     },
     {
       "importance": 50,
-      "path": "architecture/error_handling/admit_fix_learn_pattern.md",
-      "tokens": 257,
+      "path": "architecture/context.md",
+      "tokens": 86,
       "type": "context"
     },
     {
@@ -32,6 +80,18 @@
     },
     {
       "importance": 50,
+      "path": "facts/project/developer_efficiency_tools.md",
+      "tokens": 172,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "memory/management/memory_importance_scoring.md",
+      "tokens": 184,
+      "type": "context"
+    },
+    {
+      "importance": 50,
       "path": "patterns/context.md",
       "tokens": 80,
       "type": "context"
@@ -40,6 +100,12 @@
       "importance": 50,
       "path": "patterns/query_handling/context.md",
       "tokens": 48,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "patterns/query_handling/time_sensitive_queries/time_sensitive_query_pattern.md",
+      "tokens": 208,
       "type": "context"
     },
     {
@@ -85,13 +151,13 @@
       "type": "context"
     }
   ],
-  "generated_at": "2026-03-22T16:05:50.418Z",
+  "generated_at": "2026-03-28T01:06:04.169Z",
   "lane_tokens": {
-    "contexts": 2079,
+    "contexts": 2595,
     "stubs": 0,
-    "summaries": 0
+    "summaries": 1984
   },
-  "source_fingerprint": "4b5b54923d82b4b9bb91876e246adeb8953a1db73d059869424ca5c423c81b1f",
-  "total_tokens": 2079,
+  "source_fingerprint": "f9e37e92b1baa861c95fdfe9d4f05484631f481bd0751cc6778e2edda76f9a4e",
+  "total_tokens": 4579,
   "version": 1
 }
