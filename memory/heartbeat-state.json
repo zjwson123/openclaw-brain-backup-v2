@@ -3,6 +3,14 @@
     "email": null,
     "calendar": null,
     "weather": null,
-    "cron": 1740532560
+    "cron": 1740532560,
+    "agentCrash": 1740534840
+  },
+  "lastHeartbeat": 1740540240,
+  "recurringCrash": {
+    "count": 2,
+    "lastOccurrence": "2026-03-29T05:44:00+08:00",
+    "pattern": "code=1, Agent process exited before ready",
+    "intervalHours": 1.5
   }
 }
