@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "cron": 1740532560,
-    "agentCrash": 1740548040
+    "agentCrash": 1740576240
   },
-  "lastHeartbeat": 1740567840,
-  "note": "Gateway restart 已执行，新 pid 34984。Agent 崩溃持续 15.5 小时后恢复。"
+  "lastHeartbeat": 1740576240,
+  "note": "新日期 2026-03-30。版本更新仍未执行 (brew upgrade openclaw)。Git backup 正常。"
 }
