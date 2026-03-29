@@ -4,8 +4,8 @@
     "calendar": null,
     "weather": null,
     "cron": 1740532560,
-    "agentCrash": 1740549840
+    "agentCrash": 1740548040
   },
-  "lastHeartbeat": 1740549840,
-  "note": "Agent反复崩溃7次，频率加快(~30min)。Gateway正常。用户可能需要手动重启。"
+  "lastHeartbeat": 1740567840,
+  "note": "Gateway restart 已执行，新 pid 34984。Agent 崩溃持续 15.5 小时后恢复。"
 }
