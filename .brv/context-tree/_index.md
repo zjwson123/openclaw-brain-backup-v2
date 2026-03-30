@@ -1,36 +1,34 @@
 ---
-children_hash: 9159dcff380b931a23914619992605e3b605e74f72297bd84ad81611dfa9ae69
-compression_ratio: 0.3919558359621451
+children_hash: df477268762d9d6b60f262fe11fb821b04f6b7d02b95d29260cb4b9f7b24dee7
+compression_ratio: 0.42900763358778626
 condensation_order: 3
 covers: [architecture/_index.md, facts/_index.md, memory/_index.md, patterns/_index.md]
-covers_token_total: 1268
+covers_token_total: 1310
 summary_level: d3
-token_count: 497
+token_count: 562
 type: summary
 ---
-# Structural Summary: Knowledge Architecture (d3)
+# Structural Knowledge Summary (Level d3)
 
-This overview synthesizes the core domains, procedural patterns, and management frameworks governing the system.
+This summary synthesizes core architectural, operational, and behavioral conventions across the domains of Architecture, Facts, Memory, and Patterns.
 
-## 1. Architectural & Error Management (architecture/)
-The architecture domain centers on the **Admit-Fix-Learn** lifecycle, a mandatory four-step process (Acknowledge, Fix, Analyze, Update) for systemic reliability. 
-*   **Key Focus**: Errors are treated as critical data points for root cause analysis (RCA).
-*   **Accountability**: All error logs must be recorded in `patterns.md` or `feedback.md`.
-*   **Drill-down**: See `architecture/error_handling/_index.md` and `admit_fix_learn_pattern.md`.
+### Architecture: Error Handling and Stability
+The architecture domain centers on the **Admit-Fix-Learn** lifecycle, a mandatory four-stage framework (Acknowledge, Fix, Analyze, Update) for all system incidents. 
+* **Operational Application**: Specific stability protocols for OpenClaw (detailed in `openclaw_crash_troubleshooting.md`) mandate versioning $\ge$ 2026.3.28, with automated remediation triggers for persistent instability.
+* **Drill-down**: See `architecture/error_handling/_index.md` for lifecycle details and incident documentation conventions.
 
-## 2. Pattern Behavioral Framework (patterns/)
-This domain dictates agent operational procedures, specifically query handling and interaction conventions.
-*   **Time-Sensitive Query Protocol**: Mandates a verification flow that prohibits reliance on stale training data. Agents must perform a `session_status` check and validate temporal metadata before synthesis.
-*   **Key Reference**: `patterns/query_handling/_index.md` and `time_sensitive_query_pattern.md`.
+### Facts: Developer Productivity
+The facts domain serves as a repository for project-specific definitions and metadata.
+* **Developer Efficiency**: The scope has been re-formalized to "Developer Efficiency Tools" (开发提效工具) to better align with project intent.
+* **Drill-down**: Refer to `facts/project/_index.md` and `developer_efficiency_tools.md` for attribution and tool classifications.
 
-## 3. Memory & Storage Policy (memory/)
-Memory management utilizes a 1-5 importance scoring system to optimize data longevity.
-*   **Importance 4-5**: Core identity, decisions, and patterns; stored in long-term files like `MEMORY.md`.
-*   **Importance 2-3**: Background/short-term data; relegated to daily logs in `memory/YYYY-MM-DD.md`.
-*   **Importance 1**: Ephemeral data; discarded or logged transiently.
-*   **Drill-down**: See `memory/management/_index.md` and `memory_importance_scoring.md`.
+### Memory: Importance-Based Management
+The system employs a hierarchical memory management policy, categorizing information on a 1-5 importance scale to dictate storage longevity.
+* **Policy**: Data rated 4-5 (Core Identity, Decisions, Patterns) is preserved in long-term storage; 2-3 (Background) is archived in daily logs; 1 (Transient) is discarded.
+* **Drill-down**: See `memory/management/_index.md` and `memory_importance_scoring.md` for specific implementation criteria.
 
-## 4. Project Facts & Productivity (facts/)
-Maintains project-specific metadata and tool definitions.
-*   **Developer Efficiency**: Formally defined as "Developer Efficiency Tools" (开发提效工具) to focus on developer experience (DX).
-*   **Drill-down**: See `facts/project/_index.md` and `developer_efficiency_tools.md` for attribution and classification logic.
+### Patterns: Behavioral and Query Conventions
+This domain codifies mandatory procedural conventions for agent interactions and information retrieval.
+* **Query Handling**: A strict **Time-Sensitive Query Protocol** is enforced to prevent reliance on stale training data. Syntheses must be verified against current session baselines and result timestamps.
+* **Architectural Mandate**: Failure to account for temporal context is classified as a critical severity error.
+* **Drill-down**: Refer to `patterns/query_handling/_index.md` and `time_sensitive_query_pattern.md` for procedural requirements and verification flows.

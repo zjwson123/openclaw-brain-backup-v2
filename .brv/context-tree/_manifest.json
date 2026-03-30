@@ -3,13 +3,13 @@
     {
       "order": 3,
       "path": "_index.md",
-      "tokens": 497,
+      "tokens": 562,
       "type": "summary"
     },
     {
       "order": 2,
       "path": "architecture/_index.md",
-      "tokens": 313,
+      "tokens": 355,
       "type": "summary"
     },
     {
@@ -33,19 +33,7 @@
     {
       "order": 1,
       "path": "architecture/error_handling/_index.md",
-      "tokens": 238,
-      "type": "summary"
-    },
-    {
-      "order": 1,
-      "path": "facts/project/_index.md",
-      "tokens": 131,
-      "type": "summary"
-    },
-    {
-      "order": 0,
-      "path": "patterns/query_handling/time_sensitive_queries/_index.md",
-      "tokens": 109,
+      "tokens": 383,
       "type": "summary"
     },
     {
@@ -64,6 +52,12 @@
       "importance": 50,
       "path": "architecture/error_handling/context.md",
       "tokens": 56,
+      "type": "context"
+    },
+    {
+      "importance": 50,
+      "path": "architecture/error_handling/openclaw_crash_troubleshooting.md",
+      "tokens": 282,
       "type": "context"
     },
     {
@@ -151,13 +145,13 @@
       "type": "context"
     }
   ],
-  "generated_at": "2026-03-28T01:06:04.169Z",
+  "generated_at": "2026-03-30T01:05:44.602Z",
   "lane_tokens": {
-    "contexts": 2595,
+    "contexts": 2877,
     "stubs": 0,
-    "summaries": 1984
+    "summaries": 1996
   },
-  "source_fingerprint": "f9e37e92b1baa861c95fdfe9d4f05484631f481bd0751cc6778e2edda76f9a4e",
-  "total_tokens": 4579,
+  "source_fingerprint": "f15a8b36fc481f0911104e99b78daab39914c4988b023c9945f3a3e31cc4527e",
+  "total_tokens": 4873,
   "version": 1
 }

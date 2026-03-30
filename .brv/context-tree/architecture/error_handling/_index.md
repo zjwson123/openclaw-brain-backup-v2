@@ -1,29 +1,30 @@
 ---
-children_hash: 74a63a4f4e2098b134545d0ad4a7bd5b28366c49f50e05d8dac2655db35a18e6
-compression_ratio: 0.8981132075471698
+children_hash: d2d61fe855ed53065b0aeb2108b0c732df190d942da734502b529facb4716ce3
+compression_ratio: 0.70018281535649
 condensation_order: 1
-covers: [admit_fix_learn_pattern.md, context.md]
-covers_token_total: 265
+covers: [admit_fix_learn_pattern.md, context.md, openclaw_crash_troubleshooting.md]
+covers_token_total: 547
 summary_level: d1
-token_count: 238
+token_count: 383
 type: summary
 ---
-# Topic: Error Handling
+# Error Handling Architecture
 
-This domain centralizes systematic error management through the Admit-Fix-Learn lifecycle, ensuring accountability and continuous process improvement.
+The error handling domain provides a standardized, systemic approach to incident resolution and process improvement, centered on the Admit-Fix-Learn lifecycle.
 
-## Core Pattern: Admit-Fix-Learn
-A four-step mandatory workflow for error resolution:
-1. **Acknowledge**: Immediate, transparent reporting.
-2. **Fix**: Execute corrective actions.
-3. **Analyze**: Identify root causes to mitigate similar future risks.
-4. **Update**: Modify work patterns to prevent recurrence.
+### Core Methodology: Admit-Fix-Learn Pattern
+Detailed in [admit_fix_learn_pattern.md], this lifecycle mandates a four-step process for all errors:
+1. **Acknowledge**: Immediate transparency regarding the failure.
+2. **Fix**: Execute direct corrective actions.
+3. **Analyze**: Conduct root cause analysis to identify systemic risks.
+4. **Update**: Modify existing work patterns to prevent recurrence.
+*Convention*: Document all error cases within `patterns.md` or `feedback.md` to maintain a knowledge base for future prevention.
 
-## Key Concepts
-- **Pattern-based prevention**: Errors are treated as inputs for improving systemic reliability.
-- **Root cause analysis**: Deep investigation is required to close the loop on recurring issues.
+### Operational Application: OpenClaw Crash Troubleshooting
+The [openclaw_crash_troubleshooting.md] entry applies this methodology to specific agent instability:
+* **Symptom**: Agent crashes occur every 30 minutes if the version is outdated.
+* **Resolution**: Maintain versioning $\ge$ 2026.3.28 via package managers (`brew upgrade` or `npm update`).
+* **Automation Rule**: Trigger an upgrade reminder after 3 consecutive crashes. If issues persist beyond 15 hours, verify environment compatibility and gateway status.
 
-## Conventions
-- **Documentation**: All error cases must be logged in `patterns.md` or `feedback.md` to maintain a historical record of lessons learned.
-
-See [admit_fix_learn_pattern.md](./admit_fix_learn_pattern.md) for detailed workflow instructions.
+### Domain Context
+The [context.md] entry serves as the primary overview for the `error_handling` domain, emphasizing that all technical troubleshooting should be filtered through the established Admit-Fix-Learn lifecycle to ensure continuous system hardening and architectural maturity.
