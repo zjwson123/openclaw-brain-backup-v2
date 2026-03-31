@@ -64,6 +64,10 @@
 
 ### 最近更新
 <!-- 按时间倒序记录重要更新 -->
+- 2026-03-31: **系统模式归档** - ByteRover 知识挖掘结果归档至 patterns.md
+  - OpenClaw agent 崩溃 (code=1): 版本升级 2026.3.28 解决
+  - ByteRover Context 报错: 已知 cron 时机相关模式
+  - Gateway 健康检查: `openclaw gateway status`
 - 2026-03-27: **重要指令** - 用户要求AI必须主动承担自身任务，不依赖提醒
   - 创建 `memory/tasks.md` 作为每日任务清单
   - 更新 HEARTBEAT.md 增加主动任务追踪
@@ -82,4 +86,4 @@
 
 ---
 
-*最后整理: 待更新*
+*最后整理: 2026-03-31*
