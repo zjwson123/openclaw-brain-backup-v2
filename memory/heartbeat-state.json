@@ -6,6 +6,6 @@
     "cron": 1740532560,
     "agentCrash": 1740576240
   },
-  "lastHeartbeat": 1740576240,
-  "note": "新日期 2026-03-30。版本更新仍未执行 (brew upgrade openclaw)。Git backup 正常。"
+  "lastHeartbeat": 1740813780,
+  "note": "新日期 2026-04-01。ByteRover 知识挖掘结果已归档。agent crash (code=1) 确认 benign 模式。"
 }
