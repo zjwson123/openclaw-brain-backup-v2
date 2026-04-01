@@ -8,8 +8,8 @@
 
 ### 记忆系统维护
 - [x] **每日日志**: 确保 `memory/YYYY-MM-DD.md` 存在并记录重要内容
-- [ ] **信息归档**: 按重要性评分(HEARTBEAT.md)将信息归档到长期记忆
-- [ ] **记忆检索**: 回复前执行 `memory_search` 确认上下文
+- [x] **信息归档**: 按重要性评分(HEARTBEAT.md)将信息归档到长期记忆
+- [x] **记忆检索**: 回复前执行 `memory_search` 确认上下文
 
 ### 定时任务
 - [ ] **每日总结**: 23:00 触发，生成当日总结（由 cron 自动执行）
@@ -20,17 +20,17 @@
 ## 🟡 每周定期（每周至少1次）
 
 ### 专题文件同步检查
-- [ ] contacts.md - 联系人信息
-- [ ] decisions.md - 决策复盘
-- [ ] preferences.md - 偏好更新
-- [ ] projects.md - 项目状态
-- [ ] patterns.md - 模式提炼
-- [ ] feedback.md - 反馈记录
+- [x] contacts.md - 联系人信息
+- [x] decisions.md - 决策复盘
+- [x] preferences.md - 偏好更新
+- [x] projects.md - 项目状态
+- [x] patterns.md - 模式提炼
+- [x] feedback.md - 反馈记录
 
 ### 系统检查
-- [ ] 检查 cron 定时任务是否正常执行
-- [ ] 检查 memory 目录是否有异常
-- [ ] 回顾一周进展，记录到 MEMORY.md
+- [x] 检查 cron 定时任务是否正常执行
+- [x] 检查 memory 目录是否有异常
+- [x] 回顾一周进展，记录到 MEMORY.md
 
 ---
 
@@ -61,4 +61,4 @@
 
 ---
 
-*最后更新: 2026-03-27*
+*最后更新: 2026-04-01*
