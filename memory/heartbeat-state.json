@@ -2,10 +2,10 @@
   "lastChecks": {
     "email": null,
     "calendar": null,
-    "weather": null,
+    "weather": 1740816780,
     "cron": 1740532560,
     "agentCrash": 1740576240
   },
-  "lastHeartbeat": 1740813780,
-  "note": "新日期 2026-04-01。ByteRover 知识挖掘结果已归档。agent crash (code=1) 确认 benign 模式。"
+  "lastHeartbeat": 1740837180,
+  "note": "Gateway 运行正常。ByteRover error 已知为 benign 模式。天气已检查。"
 }
