@@ -12,6 +12,10 @@
     "byterover": {
       "version": "2.0.0",
       "installedAt": 1773679201437
+    },
+    "pua-skill": {
+      "version": "1.0.0",
+      "installedAt": 1775091662292
     }
   }
 }

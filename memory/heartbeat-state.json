@@ -6,6 +6,6 @@
     "cron": 1740532560,
     "agentCrash": 1740576240
   },
-  "lastHeartbeat": 1740837180,
-  "note": "Gateway 运行正常。ByteRover error 已知为 benign 模式。天气已检查。"
+  "lastHeartbeat": 1740838680,
+  "note": "下午检查：MiniMax 正常，ByteRover hook 报错持续但已知 benign。14:58 非深夜，无需健康提醒。"
 }

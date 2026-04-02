@@ -64,6 +64,11 @@
 
 ### 最近更新
 <!-- 按时间倒序记录重要更新 -->
+- 2026-04-02: **重要更新**
+  - PUA skill 安装完成（高压推进技能，用于穷尽方案不放弃）
+  - exec 配置修复：`execApprovals.mode allow-always` + Gateway 重启
+  - ByteRover 根因确认：hook-based 扩展调用 brv CLI 失败，不影响核心功能
+  - brv CLI v2.3.2 工作正常
 - 2026-04-01: **系统事件** - ByteRover Context 再次报错 "Agent process exited before ready (code=1)"
   - 可能是 ByteRover 上下文获取时机问题，需持续观察
 - 2026-04-01: **每周专题文件同步检查** - 全部正常，无需更新
