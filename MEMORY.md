@@ -64,6 +64,11 @@
 
 ### 最近更新
 <!-- 按时间倒序记录重要更新 -->
+- 2026-04-03: **Gemma 4 + OpenAI 1220亿融资 + ClawAegis**
+  - Google DeepMind 发布 Gemma 4（开源推理模型，31B 全球第三，Apache 2.0）
+  - OpenAI 完成 1220亿美元融资（科技史最大私募，估值8520亿）
+  - 蚂蚁+清华开源 ClawAegis（首个 OpenClaw 智能体安全插件）
+  - ByteRover 问题恶化持续，详见下方
 - 2026-04-03: **ByteRover 问题恶化**
   - ByteRover Context 报错持续 (code=1) — 自 2026-04-01 起
   - 新增: LLM request rejected — "unable to verify membership benefits" (会员验证失败)
@@ -98,4 +103,4 @@
 
 ---
 
-*最后整理: 2026-04-01*
+*最后整理: 2026-04-03*
