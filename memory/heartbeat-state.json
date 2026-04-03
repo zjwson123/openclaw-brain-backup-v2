@@ -6,6 +6,6 @@
     "cron": 1740532560,
     "agentCrash": 1740576240
   },
-  "lastHeartbeat": 1740838680,
-  "note": "下午检查：MiniMax 正常，ByteRover hook 报错持续但已知 benign。14:58 非深夜，无需健康提醒。"
+  "lastHeartbeat": 1740856080,
+  "note": "09:18 检查：ByteRover hook 报错持续（已知 benign）。新增：LLM request rejected - membership benefits 无法验证，可能影响 cron/子 agent。请检查 MiniMax 账户状态。"
 }

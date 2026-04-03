@@ -64,6 +64,10 @@
 
 ### 最近更新
 <!-- 按时间倒序记录重要更新 -->
+- 2026-04-03: **ByteRover 问题恶化**
+  - ByteRover Context 报错持续 (code=1) — 自 2026-04-01 起
+  - 新增: LLM request rejected — "unable to verify membership benefits" (会员验证失败)
+  - 根因仍未确认，可能是 cron 调度与 hook 时序问题
 - 2026-04-02: **重要更新**
   - PUA skill 安装完成（高压推进技能，用于穷尽方案不放弃）
   - exec 配置修复：`execApprovals.mode allow-always` + Gateway 重启
