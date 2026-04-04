@@ -6,6 +6,6 @@
     "cron": 1740532560,
     "agentCrash": 1740576240
   },
-  "lastHeartbeat": 1740878100,
-  "note": "19:55 检查：ByteRover hook 报错持续（已知 benign）。Git 自动备份 18:04 已完成。晚间例行心跳，系统运行正常。"
+  "lastHeartbeat": 1740920700,
+  "note": "22:18 检查: ByteRover LLM request rejected 持续(会员验证失败,从4月3日开始). 每日日志已创建(2026-04-04). 系统运行正常."
 }
