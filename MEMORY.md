@@ -69,10 +69,11 @@
   - OpenAI 完成 1220亿美元融资（科技史最大私募，估值8520亿）
   - 蚂蚁+清华开源 ClawAegis（首个 OpenClaw 智能体安全插件）
   - ByteRover 问题恶化持续，详见下方
-- 2026-04-03: **ByteRover 问题恶化**
-  - ByteRover Context 报错持续 (code=1) — 自 2026-04-01 起
-  - 新增: LLM request rejected — "unable to verify membership benefits" (会员验证失败)
-  - 根因仍未确认，可能是 cron 调度与 hook 时序问题
+- 2026-04-04: **ByteRover 报错根因已确认 - Kimi API 账户失效**
+  - ByteRover `LLM request rejected` 实际是 Kimi API 402 错误导致
+  - Kimi API key `sk-kimi-XroRG19nNFxx...` 返回 401+402 (账户问题)
+  - 已修复: 从 fallback 列表移除 kimi/k2p5，重启 Gateway
+  - 待办: 用户需检查 Kimi API 账户状态
 - 2026-04-02: **重要更新**
   - PUA skill 安装完成（高压推进技能，用于穷尽方案不放弃）
   - exec 配置修复：`execApprovals.mode allow-always` + Gateway 重启

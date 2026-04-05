@@ -6,6 +6,7 @@
     "cron": 1740532560,
     "agentCrash": 1740576240
   },
-  "lastHeartbeat": 1740920700,
+  "lastHeartbeat": 1740941640,
+  "note": "01:54 检查: Gateway 运行正常. Kimi API 问题已临时修复(移除 fallback). 用户需检查 Moonshot 账户. 几乎凌晨2点，系统无异常.",
   "note": "22:18 检查: ByteRover LLM request rejected 持续(会员验证失败,从4月3日开始). 每日日志已创建(2026-04-04). 系统运行正常."
 }
