@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-20T15:02:38.319Z",
+  "entries": {
+    "memory:memory/2026-04-08.md:1:41": {
+      "key": "memory:memory/2026-04-08.md:1:41",
+      "path": "memory/2026-04-08.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "## ByteRover 崩溃问题已解决 (04:22 AM) - 昨晚禁用了 ByteRover 插件 (plugins.allow 移除 byterover) - ByteRover 持续崩溃 20+ 小时后终于停止 - 安全巡检正常，配置基线哈希警告为预期 (修改配置导致) ## Heartbeat 检查 (05:52 BJT) - ByteRover 报错已消失，系统运行正常 - 安全巡检已执行（仅配置基线警告，无紧急问题） - 今日为周三，工作日，凌晨安静时段 # 2026-04-08 日志 ## 凌晨 - 安全巡检 - 时间: 03:22 BJT - 安全巡检结果: 整体正常 - ⚠️ 配置基线哈希校验失败（已知问题，昨天也出现，因修改配置导致） - ✅ ByteRover 报错已消失（禁用插件后解决） ## 早间 - 记忆系统维护 - ByteRover 问题解决: 禁用插件后崩溃停止 - 待更新 MEMORY.md 记录此解决 ## 早间 Heartbeat 检查 (07:52 BJT) - ByteRover 报错未出现 ✅ - Cron 状态: - AI-daily-news: error ⚠️ (24h) - daily-summary: error ⚠️ (9h) - weekly-github-ai-trends: error ⚠️ (2d, minimax 模型) - ByteRover Knowledge M...: ok - git-backup: ok - diary-reminder: ok - nig",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-20T15:02:38.319Z",
+      "lastRecalledAt": "2026-04-20T15:02:38.319Z",
+      "queryHashes": [
+        "b8fd1a6c6496"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "backup",
+        "plugins.allow",
+        "memory.md",
+        "ai-daily-news",
+        "daily-summary",
+        "weekly-github-ai-trends",
+        "git-backup",
+        "diary-reminder"
+      ]
+    },
+    "memory:memory/2026-03-31.md:1:41": {
+      "key": "memory:memory/2026-03-31.md:1:41",
+      "path": "memory/2026-03-31.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# 2026-03-31 Daily Log --- ## ✅ Cron 执行记录 - **22:03**: 日记提醒 cron 成功执行，已发送晚间日记提醒 ## 🔴 健康预警 (23:23 → 01:23+) - ⚠️ 连续熬夜第3天：3/29、3/30 凌晨3:30+入睡 - ⚠️ 今晚（3/31）清醒超 20 小时 - 🔴 今日总结已生成，23:00 cron 触发 - ⚠️ 凌晨1:23仍在线，已发出5次休息提醒 - **zjw 未回应强制干预，强制记录到健康档案** *强制干预失败，凌晨3:23安全巡检仍在运行* ## 📋 每日任务 ### AI 自我管理 - [x] 每日日志已创建 - [ ] 记忆系统维护 - [ ] 23:00 每日总结（cron） ### 健康提醒 - ⚠️ 连续熬夜：3/29-30 凌晨3:30+才睡 - ⚠️ 凌晨1:05仍在线，强制干预已触发 - 🔴 健康预警：连续2天熬夜，睡眠不足警告 - **要求**: 立即放下手机/电脑，去睡觉 ### 📝 ByteRover 知识挖掘 (09:03) **提取到的可保留知识:** - OpenClaw Agent 崩溃 (code=1): 升级 2026.3.23 → 2026.3.28 解决 - ByteRover Context 报错: 已知错误模式，与 cron 触发时机相关 - Gateway 健康检查: `openclaw gateway status` 检查 pid - 版本升级后需多次确认确保稳定 - 安全巡检误报: 配置基线哈希校验失败可能由 memo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-20T15:02:38.319Z",
+      "lastRecalledAt": "2026-04-20T15:02:38.319Z",
+      "queryHashes": [
+        "b8fd1a6c6496"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "gateway",
+        "3/29",
+        "3/30",
+        "3/31",
+        "3/29-30",
+        "立即放下手机/电脑",
+        "2026.3.23",
+        "2026.3.28"
+      ]
+    }
+  }
+}
