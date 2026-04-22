@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T15:02:56.326Z",
+  "updatedAt": "2026-04-22T00:00:12.786Z",
   "entries": {
     "memory:memory/2026-04-08.md:1:41": {
       "key": "memory:memory/2026-04-08.md:1:41",
@@ -248,6 +248,99 @@
         "凌晨",
         "周一",
         "git"
+      ]
+    },
+    "memory:memory/2026-03-27.md:38:65": {
+      "key": "memory:memory/2026-03-27.md:38:65",
+      "path": "memory/2026-03-27.md",
+      "startLine": 38,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "- 当前模型: minimax/MiniMax-M2.7 - 用户多次确认模型配置 ### 23:45 - 主动任务指令 - 用户要求我主动承担自身任务 - 开始落实自我任务管理机制 ### 23:50 - 周末安排变更 - 本周工作繁忙，无法回石家庄 - 明天（周六）还要加班 - 记录到 preferences.md 生活状态 ### 00:01 - Heartbeat 检查 - 时间: 2026-03-28 00:01 (已过午夜) - cron 任务状态: - daily-summary: error ⚠️ - nightly-security-audit: error - ByteRover Knowledge M...: error - weekly-github-ai-trends: error - 其他任务正常: git-backup, AI-daily-news, diary-reminder - 重要: zjw 需要明天（周六）加班，1点多还没睡 ### 待跟进 - [ ] daily-summary task 失败，需要检查原因 - [ ] 其他 error 状态的 cron 任务需要排查 - [ ] 明天 (2026-03-28) 是周六，zjw 要加班",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T00:00:12.786Z",
+      "lastRecalledAt": "2026-04-22T00:00:12.786Z",
+      "queryHashes": [
+        "9b24cc418a27"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "backup",
+        "minimax/minimax-m2.7",
+        "preferences.md",
+        "daily-summary",
+        "nightly-security-audit",
+        "weekly-github-ai-trends",
+        "git-backup",
+        "ai-daily-news"
+      ]
+    },
+    "memory:memory/2026-03-28.md:33:68": {
+      "key": "memory:memory/2026-03-28.md:33:68",
+      "path": "memory/2026-03-28.md",
+      "startLine": 33,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "- 下次执行（23:00）后状态可能恢复 ok ### Cron 任务状态 | 任务 | 状态 | |------|------| | weekly-github-ai-trends | ✅ ok | | diary-reminder | ✅ ok | | git-backup | ✅ ok | | nightly-security-audit | ✅ ok | | AI-daily-news | ✅ ok | | ByteRover Knowledge M... | ✅ ok | | daily-summary | ⚠️ error (best-effort) | --- ## 会话记录 ### 4:02 ~ 7:02 - 凌晨/早晨 Heartbeat - 多次提醒 zjw 休息（凌晨1点多还在工作） - 系统运行正常 ### 7:32 - 早晨检查 - Cron 任务例行检查 - 发现 3 个 error 状态任务 - ByteRover 插件加载正常 ### 10:06 - 每周定期检查 - 完成专题文件同步检查 - 手动触发 daily-summary 重试 - 更新 MEMORY.md 周报摘要 ### 9:10 PM - Cron 修复 - weekly-github-ai-trends: 修复模型超时问题（改为 minimax/MiniMax-M2.7），手动测试通过 - daily-summary: 开启 best-effort-deliver - 报告已归档到 memory/summaries/",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T00:00:12.786Z",
+      "lastRecalledAt": "2026-04-22T00:00:12.786Z",
+      "queryHashes": [
+        "9b24cc418a27"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "backup",
+        "weekly-github-ai-trends",
+        "diary-reminder",
+        "git-backup",
+        "nightly-security-audit",
+        "ai-daily-news",
+        "daily-summary",
+        "best-effort"
+      ]
+    },
+    "memory:memory/summaries/2026-04-20.md:1:22": {
+      "key": "memory:memory/summaries/2026-04-20.md:1:22",
+      "path": "memory/summaries/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# 每日总结 2026-04-20 ## 完成的任务 - 每日总结 cron 成功触发执行（23:00 BJT） - 系统维护状态正常，无紧急告警 ## 做得好的地方 - cron 定时任务稳定运行 - 安全巡检保持周期性执行 ## 需要改进的 - ⚠️ **严重问题**：2026-04-18、2026-04-19 连续两天的每日总结未生成，memory/YYYY-MM-DD.md 日志文件也缺失，说明这两天的 cron 可能执行失败或 AI 在这两天未正常活跃 - ⚠️ **今日（2026-04-20）同样没有生成 memory/2026-04-20.md**，无法追踪今日对话和任务详情 - 日志记录存在明显断层，记忆系统连续失效 ## 对用户的建议 - zjw 今晚（周一凌晨 23:00）仍在工作，系统连续 3 天未正常生成日志，可能意味着你这两天也较少与 AI 互动或 AI 遇到了执行问题 - 建议检查 OpenClaw cron 任务状态（`openclaw cron list`），确认 ai-daily-news、daily-summary 等 cron 是否正常执行 - 如果需要，可以手动补录这三天（04-18、04-19、04-20）的关键事件 ## 对 AI（自己）的建议 - **立即修复记忆系统**：检查为什么 04-18、04-19、04-20 的日志都缺失，可能是 HEARTBEAT.md 中的\"当日日志创建\"任务未执行",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T00:00:12.786Z",
+      "lastRecalledAt": "2026-04-22T00:00:12.786Z",
+      "queryHashes": [
+        "9b24cc418a27"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "memory/yyyy-mm-dd.md",
+        "memory/2026-04-20.md",
+        "ai-daily-news",
+        "daily-summary",
+        "04-18",
+        "04-19",
+        "04-20",
+        "heartbeat.md"
       ]
     }
   }
