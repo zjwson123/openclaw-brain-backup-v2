@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T15:00:12.416Z",
+  "updatedAt": "2026-04-26T15:00:07.816Z",
   "entries": {
     "memory:memory/2026-04-08.md:1:41": {
       "key": "memory:memory/2026-04-08.md:1:41",
@@ -9,20 +9,22 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "## ByteRover 崩溃问题已解决 (04:22 AM) - 昨晚禁用了 ByteRover 插件 (plugins.allow 移除 byterover) - ByteRover 持续崩溃 20+ 小时后终于停止 - 安全巡检正常，配置基线哈希警告为预期 (修改配置导致) ## Heartbeat 检查 (05:52 BJT) - ByteRover 报错已消失，系统运行正常 - 安全巡检已执行（仅配置基线警告，无紧急问题） - 今日为周三，工作日，凌晨安静时段 # 2026-04-08 日志 ## 凌晨 - 安全巡检 - 时间: 03:22 BJT - 安全巡检结果: 整体正常 - ⚠️ 配置基线哈希校验失败（已知问题，昨天也出现，因修改配置导致） - ✅ ByteRover 报错已消失（禁用插件后解决） ## 早间 - 记忆系统维护 - ByteRover 问题解决: 禁用插件后崩溃停止 - 待更新 MEMORY.md 记录此解决 ## 早间 Heartbeat 检查 (07:52 BJT) - ByteRover 报错未出现 ✅ - Cron 状态: - AI-daily-news: error ⚠️ (24h) - daily-summary: error ⚠️ (9h) - weekly-github-ai-trends: error ⚠️ (2d, minimax 模型) - ByteRover Knowledge M...: ok - git-backup: ok - diary-reminder: ok - nig",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-20T15:02:38.319Z",
-      "lastRecalledAt": "2026-04-23T15:00:12.416Z",
+      "lastRecalledAt": "2026-04-26T15:00:07.816Z",
       "queryHashes": [
         "b8fd1a6c6496",
-        "c7536575f016"
+        "c7536575f016",
+        "84d928edcef8"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-26"
       ],
       "conceptTags": [
         "backup",
@@ -261,20 +263,22 @@
       "endLine": 65,
       "source": "memory",
       "snippet": "- 当前模型: minimax/MiniMax-M2.7 - 用户多次确认模型配置 ### 23:45 - 主动任务指令 - 用户要求我主动承担自身任务 - 开始落实自我任务管理机制 ### 23:50 - 周末安排变更 - 本周工作繁忙，无法回石家庄 - 明天（周六）还要加班 - 记录到 preferences.md 生活状态 ### 00:01 - Heartbeat 检查 - 时间: 2026-03-28 00:01 (已过午夜) - cron 任务状态: - daily-summary: error ⚠️ - nightly-security-audit: error - ByteRover Knowledge M...: error - weekly-github-ai-trends: error - 其他任务正常: git-backup, AI-daily-news, diary-reminder - 重要: zjw 需要明天（周六）加班，1点多还没睡 ### 待跟进 - [ ] daily-summary task 失败，需要检查原因 - [ ] 其他 error 状态的 cron 任务需要排查 - [ ] 明天 (2026-03-28) 是周六，zjw 要加班",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-22T00:00:12.786Z",
-      "lastRecalledAt": "2026-04-23T15:00:12.416Z",
+      "lastRecalledAt": "2026-04-26T15:00:07.816Z",
       "queryHashes": [
         "9b24cc418a27",
-        "c7536575f016"
+        "c7536575f016",
+        "84d928edcef8"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-26"
       ],
       "conceptTags": [
         "backup",
@@ -294,20 +298,22 @@
       "endLine": 68,
       "source": "memory",
       "snippet": "- 下次执行（23:00）后状态可能恢复 ok ### Cron 任务状态 | 任务 | 状态 | |------|------| | weekly-github-ai-trends | ✅ ok | | diary-reminder | ✅ ok | | git-backup | ✅ ok | | nightly-security-audit | ✅ ok | | AI-daily-news | ✅ ok | | ByteRover Knowledge M... | ✅ ok | | daily-summary | ⚠️ error (best-effort) | --- ## 会话记录 ### 4:02 ~ 7:02 - 凌晨/早晨 Heartbeat - 多次提醒 zjw 休息（凌晨1点多还在工作） - 系统运行正常 ### 7:32 - 早晨检查 - Cron 任务例行检查 - 发现 3 个 error 状态任务 - ByteRover 插件加载正常 ### 10:06 - 每周定期检查 - 完成专题文件同步检查 - 手动触发 daily-summary 重试 - 更新 MEMORY.md 周报摘要 ### 9:10 PM - Cron 修复 - weekly-github-ai-trends: 修复模型超时问题（改为 minimax/MiniMax-M2.7），手动测试通过 - daily-summary: 开启 best-effort-deliver - 报告已归档到 memory/summaries/",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-22T00:00:12.786Z",
-      "lastRecalledAt": "2026-04-23T15:00:12.416Z",
+      "lastRecalledAt": "2026-04-26T15:00:07.816Z",
       "queryHashes": [
         "9b24cc418a27",
-        "c7536575f016"
+        "c7536575f016",
+        "84d928edcef8"
       ],
       "recallDays": [
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-26"
       ],
       "conceptTags": [
         "backup",
@@ -453,18 +459,20 @@
       "endLine": 22,
       "source": "memory",
       "snippet": "# 每日总结 - 2026-03-28 ## 完成的任务 - **Cron 任务修复** - weekly-github-ai-trends：修复模型超时问题（切换至 minimax/MiniMax-M2.7），手动测试通过，成功生成本周 GitHub AI 趋势榜报告 - daily-summary：开启 best-effort-deliver，解决 delivery 失败误报 error 的问题 - **每周定期检查**：完成全部专题文件同步检查（contacts、decisions、preferences、projects、patterns、feedback） - **凌晨工作提醒**：凌晨1点多多次提醒 zjw 休息，体现健康管理职责 - **夜间安全审计**：nightly-security-audit 正常执行 ## 做得好的地方 - 主动发现并修复了 weekly-github-ai-trends 的模型超时问题，更换模型后任务稳定通过 - 正确识别了 daily-summary 的 error 状态根源（delivery 机制），通过 best-effort 模式有效缓解 - 专题文件维护及时，本周无遗漏，所有文件均在有效范围内 - 对用户健康状态的关注持续且主动，凌晨多次提醒 ## 需要改进的地方 - daily-summary 仍有 error 残留状态，下次正常执行后有望自动恢复，但根本原因值得后续排查（是否是 cron 系统自身的问题） - 凌晨高频提醒可能打扰用户工作节奏，可考虑优化提醒频率或改为更柔和的提示方式",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-23T15:00:12.416Z",
-      "lastRecalledAt": "2026-04-23T15:00:12.416Z",
+      "lastRecalledAt": "2026-04-26T15:00:07.816Z",
       "queryHashes": [
-        "c7536575f016"
+        "c7536575f016",
+        "84d928edcef8"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-26"
       ],
       "conceptTags": [
         "weekly-github-ai-trends",
@@ -484,18 +492,20 @@
       "endLine": 6,
       "source": "memory",
       "snippet": "# 2026-04-20 日志 ## 周一 - daily-summary cron 23:00 UTC 成功执行 - 系统运行正常",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-23T15:00:12.416Z",
-      "lastRecalledAt": "2026-04-23T15:00:12.416Z",
+      "lastRecalledAt": "2026-04-26T15:00:07.816Z",
       "queryHashes": [
-        "c7536575f016"
+        "c7536575f016",
+        "84d928edcef8"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-26"
       ],
       "conceptTags": [
         "daily-summary",
@@ -515,18 +525,20 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "- 如果需要，可以手动补录这三天（04-18、04-19、04-20）的关键事件 ## 对 AI（自己）的建议 - **立即修复记忆系统**：检查为什么 04-18、04-19、04-20 的日志都缺失，可能是 HEARTBEAT.md 中的\"当日日志创建\"任务未执行 - **加强 cron 失败告警**：当 cron 任务连续失败（如 daily-summary 超过 24h 未执行），应主动向用户发送告警消息 - **确保每日日志落地**：在每次会话结束时，必须创建或更新 memory/YYYY-MM-DD.md，不依赖 cron 的 daily-summary - **补录缺失日志**：检查是否有其他来源可以重建 04-18 和 04-19 的日志内容 --- *🦞 Clawd 晚间总结 | 2026-04-20 23:00 BJT*",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-23T15:00:12.416Z",
-      "lastRecalledAt": "2026-04-23T15:00:12.416Z",
+      "lastRecalledAt": "2026-04-26T15:00:07.816Z",
       "queryHashes": [
-        "c7536575f016"
+        "c7536575f016",
+        "84d928edcef8"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-26"
       ],
       "conceptTags": [
         "04-18",
