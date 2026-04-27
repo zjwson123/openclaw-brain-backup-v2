@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-26T15:00:07.816Z",
+  "updatedAt": "2026-04-27T15:01:26.550Z",
   "entries": {
     "memory:memory/2026-04-08.md:1:41": {
       "key": "memory:memory/2026-04-08.md:1:41",
@@ -890,6 +890,99 @@
         "崩溃",
         "持续",
         "首次"
+      ]
+    },
+    "memory:memory/2026-04-01.md:31:57": {
+      "key": "memory:memory/2026-04-01.md:31:57",
+      "path": "memory/2026-04-01.md",
+      "startLine": 31,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "- feedback.md: 正常，无需更新 - ByteRover Context 报错持续：已知 cron 时机问题，agent 正常运行，暂无需处理 --- ## 📝 每日总结（23:44） ### 今日概况 - **系统状态**: ByteRover Context 报错持续（已知 cron 时机问题），agent 正常运行 - **Git 备份**: 成功，4 个文件已提交推送 - **专题同步**: 全部正常，无更新需求 ### 待跟进 - ByteRover Context 报错：可能需进一步排查定时触发机制 ### 记忆系统 - 每日日志正常创建 - 任务清单 `tasks.md` 已更新（最后更新 2026-04-01） - **01:14 / 01:44** 深夜心跳检查，系统正常运行 - ByteRover Context 报错（已知问题） - 已提醒用户休息 --- *创建于 2026-04-01 17:23*",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-27T15:01:26.550Z",
+      "lastRecalledAt": "2026-04-27T15:01:26.550Z",
+      "queryHashes": [
+        "8f7e842307a4"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "备份",
+        "feedback.md",
+        "tasks.md",
+        "正常",
+        "更新",
+        "byterover",
+        "context",
+        "持续"
+      ]
+    },
+    "memory:memory/2026-03-27.md:1:47": {
+      "key": "memory:memory/2026-03-27.md:1:47",
+      "path": "memory/2026-03-27.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "# 2026-03-27 日志 ## 重要指令 ### 用户指令：主动承担自身任务 - **时间**: 2026-03-27 23:45 - **内容**: 用户明确要求我必须自己想着去做每天的任务，不要依赖提醒 - **重要性**: ⭐⭐⭐⭐⭐ - **行动**: - [x] 创建 `tasks.md` 作为我的每日任务清单 - [x] 更新 HEARTBEAT.md 增加主动任务追踪 - [x] 在 MEMORY.md 记录此指令 ## 每日任务清单 ### 🔄 每次 Heartbeat/定时触发 - [ ] 检查是否有需要处理的消息/通知 - [ ] 监控定时任务执行状态 - [ ] 记忆系统维护（按 HEARTBEAT.md） ### 📝 每日自动执行 - [ ] 生成每日总结（23:00 cron） - [ ] 更新当日日志 ### 🔍 定期检查（每周） - [ ] 专题文件同步检查（contacts, decisions, preferences, projects, patterns, feedback） - [ ] 回顾一周进展 - [ ] 清理过期日志（>30天） ### 💡 主动关注 - [ ] 用户健康状态（深夜工作提醒） - [ ] 任务进展跟进 - [ ] 新信息及时记录 ## 会话记录 ### 23:31 - 模型确认 - 当前模型: minimax/MiniMax-M2.7 - 用户多次确认模型配置 ### 23:45 - 主动任务指令 - 用户要求我主动承担自身任务 - 开始落实自我任务管理机制 ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-27T15:01:26.550Z",
+      "lastRecalledAt": "2026-04-27T15:01:26.550Z",
+      "queryHashes": [
+        "8f7e842307a4"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "tasks.md",
+        "heartbeat.md",
+        "memory.md",
+        "heartbeat/定时触发",
+        "检查是否有需要处理的消息/通知",
+        "minimax/minimax-m2.7",
+        "日志",
+        "重要"
+      ]
+    },
+    "memory:memory/2026-04-01.md:1:39": {
+      "key": "memory:memory/2026-04-01.md:1:39",
+      "path": "memory/2026-04-01.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# 2026-04-01 日志 *克劳德的每日工作记录* --- ## 系统事件 - **16:23** ByteRover Context 报错: \"Agent process exited before ready (code=1)\" - 这是已知模式：OpenClaw agent 崩溃问题，版本升级至 2026.3.28 后已解决 - 可能是 ByteRover 上下文获取时机问题（cron 时机相关） - 持续出现需进一步排查 - **17:23** 正常心跳，继续任务执行 - **18:23** Git 自动备份成功 - 提交了 4 个文件的变更（MEMORY.md、memory/2026-04-01.md、heartbeat-state.json、tasks.md） - 已推送到 `origin/master` - 上午的 cron 失败是 agent 启动超时问题，备份本身成功 - **19:53** 正常心跳检查 - ByteRover Context 报错继续出现，可能是定时触发机制问题 - 系统运行正常，无紧急事项 - **20:23** 执行每周专题文件同步检查 - contacts.md: 正常，无需更新 - decisions.md: 正常，无需更新 - preferences.md: 正常，无需更新 - projects.md: 正常，无需更新 - patterns.md: 最后更新 2026-04-01 09:24，已同步 - feedback.md: 正常，无需更新 -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-27T15:01:26.550Z",
+      "lastRecalledAt": "2026-04-27T15:01:26.550Z",
+      "queryHashes": [
+        "8f7e842307a4"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "备份",
+        "2026.3.28",
+        "memory.md",
+        "memory/2026-04-01.md",
+        "heartbeat-state.json",
+        "tasks.md",
+        "origin/master",
+        "contacts.md"
       ]
     }
   }
