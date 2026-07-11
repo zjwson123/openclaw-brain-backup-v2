@@ -23,3 +23,6 @@ VolumeIcon.icns
 # Logs
 *.log
 logs/
+
+# OpenClaw runtime state
+openclaw-workspace-state.json
