@@ -1,0 +1,12 @@
+[main/sessions/main/3d9051d7-3a66-459f-b0f7-0208f94dad6b#L6] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/3d9051d7-3a66-459f-b0f7-0208f94dad6b#L8] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/3d9051d7-3a66-459f-b0f7-0208f94dad6b#L16] Assistant: 已发送：由于 `web_search` 当前不可用，已直接通知目标用户本次早报生成受阻。
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L5] User: 只回答两个字：可用
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L6] Assistant: 可用
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L7] User: 只回答两个字：可用
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L8] Assistant: 可用
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L9] User: 请用 exec 工具运行命令 echo AAA，然后再运行 echo BBB，最后把两条输出都告诉我。
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L14] Assistant: 两条命令的输出： - `echo AAA` → `AAA` - `echo BBB` → `BBB`
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L15] User: 只回答两个字：可用
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L17] Assistant: 可用
+[main/sessions/main/3da6c48b-0dc1-4b80-8705-0b75ea39e319#L35] Assistant: 定时任务通知已收到：`cron-nested` 任务因长时间无进展而超时（103 秒无进度，超出 630 秒预算）。当前没有正在运行或最近的会话，也没有未完成的待办。 系统运行正常，等待你的下一条指令。
